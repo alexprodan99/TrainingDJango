@@ -1,0 +1,4 @@
+python manage.py makemigrations appName
+python manage.py migrate appName
+
+python manage.py createsuperuser
