@@ -18,5 +18,14 @@ from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    #using auth default app -> user authentification
+    #User model -> • username • password • email • first_name • last_name
+    #login and logout using auth
+    #for signup create a new app
+    path('accounts/',include('django.contrib.auth.urls')),
+    
+    #for sign up
+    path('accounts/', include('accounts.urls')),
     path('',include('blog.urls')),
+
 ]
