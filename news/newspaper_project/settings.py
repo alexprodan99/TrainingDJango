@@ -32,6 +32,10 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'users.apps.UsersConfig',
+    'pages.apps.PagesConfig',
+
+
+    'crispy_forms', # new,
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -41,6 +45,9 @@ INSTALLED_APPS = [
 ]
 #new -> user model in models.py
 AUTH_USER_MODEL = 'users.CustomUser'
+
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 
 #new
